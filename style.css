@@ -1,4 +1,4 @@
-shtml,
+html,
 body {
     padding: 0;
     margin: 0;
@@ -28,20 +28,26 @@ body {
 }
 
 .content-wrapper .content h1 {
-    font-family: 'ITC Avant Garde Gothic Pro';
-    font-size: 31px;
+    font-family: 'ITCAvantGardePro';
+    font-weight: 700;
+    font-size: 31.25px;
+    line-height: 40.62px;
     color: #000000;
 }
 
 .content-wrapper .content p {
     font-family: 'Avenir';
+    font-weight: 400;
     font-size: 16px;
+    line-height: 25.6px;
     color: #666666;
 }
 
 .content-wrapper .content a {
     font-family: 'Avenir';
+    font-weight: 900;
     font-size: 12.8px;
+    line-height: 17.48px;
     border-bottom: 1px solid;
     padding-bottom: 5px;
 }
@@ -51,6 +57,7 @@ body {
     padding-left: 18%;
     overflow-x: hidden;
     display: flex;
+    position: relative;
 }
 
 .slider .btn {
@@ -64,12 +71,14 @@ body {
     width: 40px;
     height: 40px;
     right: 48px;
-    top: 541px;
+    top: 40%;
     border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .slider .btn .icon {
-    background-image: url("Path.jpg");
+    background-image: url("Path.png");
+    background-repeat: no-repeat;
+    background-position: center;
     width: 16px;
     height: 16px;
     flex: none;
@@ -94,13 +103,17 @@ body {
 
 .slider .card .detials {
     font-family: 'Avenir';
+    font-weight: 400;
     font-size: 12.8px;
+    line-height: 20.48px;
     padding-bottom: 4px;
 }
 
 .slider .card .price {
     font-family: 'Avenir';
+    font-weight: 500;
     font-size: 12.8px;
+    line-height: 20.48px;
 }
 
 .slider .card .line {
