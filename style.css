@@ -1,0 +1,201 @@
+shtml,
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.image-wrapper {
+    background-size: cover;
+    background-image: url("bg.jpg");
+}
+
+.content-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.content-wrapper .content {
+    padding-left: 18%;
+    padding-right: 18%;
+}
+
+.content-wrapper .content h1 {
+    font-family: 'ITC Avant Garde Gothic Pro';
+    font-size: 31px;
+    color: #000000;
+}
+
+.content-wrapper .content p {
+    font-family: 'Avenir';
+    font-size: 16px;
+    color: #666666;
+}
+
+.content-wrapper .content a {
+    font-family: 'Avenir';
+    font-size: 12.8px;
+    border-bottom: 1px solid;
+    padding-bottom: 5px;
+}
+
+/* SLİDER */
+.slider {
+    padding-left: 18%;
+    overflow-x: hidden;
+    display: flex;
+}
+
+.slider .btn {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 12px;
+    gap: 10px;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    right: 48px;
+    top: 541px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.slider .btn .icon {
+    background-image: url("Path.jpg");
+    width: 16px;
+    height: 16px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.slider .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 230px;
+    height: 363px;
+    margin-right: 32px;
+}
+
+.slider .card img {
+    width: 230px;
+    height: 310px;
+    padding-bottom: 12px;
+}
+
+.slider .card .detials {
+    font-family: 'Avenir';
+    font-size: 12.8px;
+    padding-bottom: 4px;
+}
+
+.slider .card .price {
+    font-family: 'Avenir';
+    font-size: 12.8px;
+}
+
+.slider .card .line {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.slider .card .color-option {
+    display: flex;
+    justify-content: space-between;
+    width: 12px;
+    height: 12px;
+    border-radius: 100%;
+    float: left;
+    margin-left: 8px;
+}
+
+.slider .card .color-option1 {
+    border: 1px solid #000000;
+    border-style: groove;
+    box-sizing: border-box;
+    background-color: #99C3CC;
+}
+
+.slider .card .color-option2 {
+    background-color: #CC9999;
+}
+
+.slider .card .color-option3 {
+    background-color: #CB99CC;
+}
+
+.slider .card .color-option4 {
+    background-color: #A6CC99;
+}
+
+/* responsive */
+
+@media only screen and (max-width: 768px) {
+
+    .container {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 100% 100%;
+        width: 100%;
+        min-height: 100vh;
+    }
+
+    .container .image-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-image: url("bg.jpg");
+    }
+
+    .container .content-wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .container .content-wrapper .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        position: absolute;
+        color: #FFFFFF;
+        top: 60%;
+        bottom: 29%;
+    }
+
+    .container .content-wrapper .content h1 {
+        color: #FFFFFF;
+    }
+
+    .container .content-wrapper .content p {
+        display: none;
+    }
+
+    .slider .btn {
+        display: none;
+    }
+
+    .slider {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        position: relative;
+        bottom: 12%;
+    }
+
+}
